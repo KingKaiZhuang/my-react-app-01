@@ -1,0 +1,48 @@
+.myslider {
+    padding: 20px;
+    margin-block: 10px;
+    margin-inline: 10px;
+    background-color: #f5f5f5; // 設置背景顏色
+    border-radius: 8px; // 圓角效果
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); // 陰影效果
+  
+    .slider-group {
+      display: flex;
+      align-items: center; // 垂直居中對齊
+      gap: 20px; // 元件間距
+  
+      input[type="range"] {
+        -webkit-appearance: none; // 移除預設樣式
+        width: 100%; // 完整寬度
+        height: 8px; // 滑動條的高度
+        background: #ddd; // 背景顏色
+        border-radius: 4px; // 圓角
+        outline: none; // 移除輪廓
+  
+        // 滑動條內部滑塊的樣式
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          height: 20px;
+          width: 20px;
+          background-color: #4285F4; // 滑塊顏色
+          border-radius: 50%; // 圓形滑塊
+          cursor: pointer; // 滑動時的游標
+        }
+  
+        &::-moz-range-thumb {
+          height: 20px;
+          width: 20px;
+          border: none;
+          background-color: #4285F4;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+  
+      span {
+        font-size: 16px; // 字體大小
+        color: #333; // 字體顏色
+      }
+    }
+  }
+  
